@@ -26,6 +26,9 @@ git checkout -b fulana-e-ciclana
 git push -u origin fulana-e-ciclana
 ```
 
+Para ver se sua branch foi criada corretamente, veja se ela está [nesta
+lista](https://github.com/aceleradora-TW/exercicios-node-e-js/branches/all).
+
 __4. Instale as dependências do projeto__
 
 Para isso, execute:
