@@ -1,0 +1,22 @@
+{
+  "name": "exercicios-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aceleradora-TW/exercicios-node-e-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aceleradora-TW/exercicios-node-e-js/issues"
+  },
+  "homepage": "https://github.com/aceleradora-TW/exercicios-node-e-js#readme",
+  "devDependencies": {
+    "jest": "^22.4.3"
+  }
+}
