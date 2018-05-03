@@ -51,4 +51,6 @@ __A calculadora__
 
 Neste exercício, a dupla deve implementar o comportamento do módulo `src/calculadora.js`, fazendo os testes `calculadora.test.js` passarem.
 
+__O acumulador__
 
+Neste exercício, a dupla deve implementar o comportamento do módulo `src/acumulador.js`, fazendo os testes `acumulador.test.js` passarem. (Atente que não é permitido usar `for` neste exercício) 
