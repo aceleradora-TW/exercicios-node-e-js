@@ -9,4 +9,9 @@ const maiorSalario = () => pessoas
   .map(pessoa => pessoa.salario)
   .reduce(comparaSalarios)
 
-module.exports = {maiorSalario}
+const possuiPetChamado = (nomeDoPet) => pessoas
+  .find(pessoa => pessoa
+    .pets
+    .find(pet => pet.nome === nomeDoPet))
+
+module.exports = {maiorSalario, possuiPetChamado}
