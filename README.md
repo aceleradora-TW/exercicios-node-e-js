@@ -71,8 +71,20 @@ esqueça de importá-lo.
 
 __O acumulador__
 
-Neste exercício, a dupla deve implementar o comportamento do módulo `src/acumulador.js`, fazendo os testes `acumulador.test.js` passarem. (Atente que não é permitido usar `for` neste exercício)
+Neste exercício, a dupla deve implementar o comportamento do módulo `src/acumulador.js`, fazendo os testes `acumulador.test.js` passarem.
+(Atente que não é permitido usar `for` neste exercício)
 
 __Logger (Depende do acumulador)__
 
-Após implementar o acumulador, a dupla deve utilizar o módulo `src/logger.js` para colocar o resultado no log, e assim fazer os testes de `acumulador.test.js` passar.
+Após implementar o acumulador, a dupla deve utilizar o módulo `src/logger.js` para colocar o resultado no log, e assim fazer os testes de
+`acumulador.test.js` passar.
+
+__Letras__
+
+Escreva testes para o módulo `src/letras.js`. O módulo contém uma descrição à respeito de seu funcionamento. Esta descrição pode servir como
+base para a criação de casos de testes.
+
+__Observação:__ Este módulo possui um bug. __Ele não filtra palavras com acento corretamente.__
+
+Depois de escrever os primeiros casos de teste, corrija o bug do módulo usando TDD (escreva os testes primeiro, depois modifique o código do
+módulo)
