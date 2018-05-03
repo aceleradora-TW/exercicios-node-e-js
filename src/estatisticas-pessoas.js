@@ -14,4 +14,8 @@ const possuiPetChamado = (nomeDoPet) => pessoas
     .pets
     .find(pet => pet.nome === nomeDoPet))
 
-module.exports = {maiorSalario, possuiPetChamado}
+const possuiNenhumPet = () => pessoas
+  .filter(pessoa => !pessoa.pets.length)
+  .map(pessoa => pessoa.nome)
+
+module.exports = {maiorSalario, possuiPetChamado, possuiNenhumPet}
