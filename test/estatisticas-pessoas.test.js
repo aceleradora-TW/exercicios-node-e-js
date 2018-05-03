@@ -1,4 +1,3 @@
-
 const estatisticas = require('../src/estatisticas-pessoas.js')
 
 describe('O modulo de estatisticas', () => {
