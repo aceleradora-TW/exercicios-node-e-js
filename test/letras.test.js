@@ -13,4 +13,12 @@ describe('O módulo letras', () => {
     expect(letras.consoantes('PESSOA')).toEqual(['p', 's', 's'])
     expect(letras.consoantes('PeSsOa')).toEqual(['p', 's', 's'])
   })
+
+  it('filtra vogais de palavras com acento corretamente', () => {
+    expect(letras.vogais('avião')).toEqual(['a', 'i', 'ã', 'o'])
+  })
+
+  it('filtra consoantes de palavras com acento corretamente', () => {
+    expect(letras.consoantes('avião')).toEqual(['v'])
+  })
 })
