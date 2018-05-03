@@ -69,3 +69,6 @@ __Estatisticas de pessoas__
 Implemente a lógica do módulo `src/estatisticas-pessoas.js`. Não esqueça que este módulo depende do módulo `pessoas.js`, por isso, não
 esqueça de importá-lo.
 
+__O acumulador__
+
+Neste exercício, a dupla deve implementar o comportamento do módulo `src/acumulador.js`, fazendo os testes `acumulador.test.js` passarem. (Atente que não é permitido usar `for` neste exercício) 
