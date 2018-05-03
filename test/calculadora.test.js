@@ -17,4 +17,14 @@ describe('Calculadora', () => {
 
     expect(resultado).toEqual(0)
   })
+
+  it('Deve multiplicar corretamente', () => {
+    const resultado  = calculadora.multiplica(1,1)
+    expect(resultado).toEqual(1)
+  })
+
+  it('Deve dividir corretamente',()=>{
+    const resultado = calculadora.divide(6,2)
+    expect(resultado).toEqual(3)    
+  })
 })

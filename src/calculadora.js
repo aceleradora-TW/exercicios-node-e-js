@@ -1,10 +1,21 @@
 
 function soma(umValor, outroValor) {
-  // Implemente
+  return umValor + outroValor
 }
 
 function subtrai(umValor, outroValor) {
-  // Implemente
+  return umValor - outroValor
 }
 
-module.exports = {soma, subtrai}
+function multiplica(umValor , outroValor){
+return umValor * outroValor
+}
+
+function divide(umValor, outroValor){
+  return umValor / outroValor
+}
+
+
+
+
+module.exports = {soma, subtrai, multiplica, divide}
