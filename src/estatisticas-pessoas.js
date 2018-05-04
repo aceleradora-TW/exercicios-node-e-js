@@ -17,5 +17,6 @@ function possuiNenhumPet(){
   const pessoasSemPets = pessoas.filter(pessoa => pessoa.pets.length == 0)
   return pessoasSemPets.map(pessoa => pessoa.nome)
 }
+console.log(possuiNenhumPet());
 
-module.exports = {maiorSalario, possuiPetChamado, possuiNenhumPet}
+module.exports = {maiorSalario, possuiPetChamado,possuiNenhumPet}
