@@ -16,17 +16,15 @@ function possuiPetChamado(nomePet){
        })
      })[0]
 }
-console.log (possuiPetChamado('Vieirinha'))
 
+function possuiNenhumPet(){
+  let pessoaSemPet = []
+  for (var i = 0; i < pessoas.length; i++) {
+    if (pessoas[i].pets.length == 0) {
+       pessoaSemPet.push(pessoas[i].nome)
+      }
+  }
+  return pessoaSemPet
+}
 
-
-
-
-
-
-
-
-
-
-
-module.exports ={maiorSalario, possuiPetChamado}
+module.exports ={maiorSalario, possuiPetChamado, possuiNenhumPet}
