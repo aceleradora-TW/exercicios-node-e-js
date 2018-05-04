@@ -15,7 +15,7 @@ function possuiPetChamado(nomePet){
 
   for (var i = 0; i < pessoas.length; i++) {
     if (pessoas[i].pets.length >0) {
-    
+
        for (var x = 0; x < pessoas[i].pets.length; x++) {
           if (pessoas[i].pets[x].nome === nomePet) {
             return pessoas[i]
@@ -24,16 +24,16 @@ function possuiPetChamado(nomePet){
     }
   }
 }
+
 function possuiNenhumPet(){
-  let pessoaSemPet = []
-
-  for (var i = 0; i < pessoas.length; i++) {
-    if (pessoas[i].pets.length == 0) {
-
-       pessoaSemPet.push(pessoas[i].nome)
-      }
+  function semPet(pessoa) {
+    return pessoa.pets.length === 0;
   }
-   return pessoaSemPet
+
+  function nomePessoa(pessoa) {
+    return pessoa.nome
+  }
+  return pessoas.filter(semPet).map(nomePessoa);
 }
 
 const estatisticas_pessoas = {
