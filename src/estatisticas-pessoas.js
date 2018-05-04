@@ -10,22 +10,36 @@ function maiorSalario() {
   return maior
 }
 
+
 function possuiPetChamado(nomePet){
+
   for (var i = 0; i < pessoas.length; i++) {
     if (pessoas[i].pets.length >0) {
-      //console.log(pessoas[i].pets.length);
+    
        for (var x = 0; x < pessoas[i].pets.length; x++) {
           if (pessoas[i].pets[x].nome === nomePet) {
-            console.log('OLAR');
+            return pessoas[i]
           }
        }
     }
   }
 }
+function possuiNenhumPet(){
+  let pessoaSemPet = []
+
+  for (var i = 0; i < pessoas.length; i++) {
+    if (pessoas[i].pets.length == 0) {
+
+       pessoaSemPet.push(pessoas[i].nome)
+      }
+  }
+   return pessoaSemPet
+}
 
 const estatisticas_pessoas = {
   maiorSalario,
-  possuiPetChamado
+  possuiPetChamado,
+  possuiNenhumPet
 }
 
 module.exports = estatisticas_pessoas
