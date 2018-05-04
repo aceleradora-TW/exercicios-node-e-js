@@ -14,8 +14,8 @@ describe('Acumulador', () => {
     })
 
     describe('logger', () => {
-        /** 
-        * É obrigatório usar o logger.js nesta parte do exercício. 
+        /**
+        * É obrigatório usar o logger.js nesta parte do exercício.
         */
        
         global.console = {
