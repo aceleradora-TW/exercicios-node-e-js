@@ -10,4 +10,3 @@ function subtrai(umValor, outroValor) {
 }
 
 module.exports = {soma, subtrai}
-  
