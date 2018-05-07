@@ -12,7 +12,7 @@
  * letras.consoantes('pessoa') // ['p', 's', 's']
  */
 
-const VOGAIS = ['a', 'e', 'i', 'o', 'u']
+const VOGAIS = ['a', 'e', 'i', 'o', 'u', 'á','é','í','ó','ú','ã','õ','â','ê','ô','ü','à']
 
 const vogais = (palavra = '') => [...palavra.toLowerCase()].filter(letra => VOGAIS.includes(letra))
 
