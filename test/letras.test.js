@@ -15,10 +15,10 @@ describe('O módulo de letras', () => {
       expect (consoantes).toEqual(['s', 'q', 'l'])
     })
 
-    it('exibe vogais com acento', () => {
-      const acento = letras.vogais('Láúrá')
+    it('exibe vogais acentuadas sem acento', () => {
+      const acento = letras.removerAcentos('Láúrá')
 
-      expect(acento).toEqual(['á', 'ú', 'á'])
+      expect(acento).toEqual(['a', 'u', 'a'])
     })
 
 
