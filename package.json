@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx jest test/estatisticas-pessoas.test"
+    "test": "npx jest test/acumulador.test"
   },
   "repository": {
     "type": "git",
