@@ -69,3 +69,17 @@ __Estatisticas de pessoas__
 Implemente a lógica do módulo `src/estatisticas-pessoas.js`. Não esqueça que este módulo depende do módulo `pessoas.js`, por isso, não
 esqueça de importá-lo.
 
+__O acumulador__
+
+Neste exercício, a dupla deve implementar o comportamento do módulo `src/acumulador.js`, fazendo os testes `acumulador.test.js` passarem.
+(Atente que não é permitido usar `for` neste exercício)
+
+__Letras__
+
+Escreva testes para o módulo `src/letras.js`. O módulo contém uma descrição à respeito de seu funcionamento. Esta descrição pode servir como
+base para a criação de casos de testes.
+
+__Observação:__ Este módulo possui um bug. __Ele não filtra palavras com acento corretamente.__
+
+Depois de escrever os primeiros casos de teste, corrija o bug do módulo usando TDD (escreva os testes primeiro, depois modifique o código do
+módulo)
