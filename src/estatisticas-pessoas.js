@@ -12,17 +12,13 @@ function maiorSalario() {
 
 
 function possuiPetChamado(nomePet){
-
-  for (var i = 0; i < pessoas.length; i++) {
-    if (pessoas[i].pets.length >0) {
-
-       for (var x = 0; x < pessoas[i].pets.length; x++) {
-          if (pessoas[i].pets[x].nome === nomePet) {
-            return pessoas[i]
-          }
-       }
+  let pessoacomPet
+  pessoas.forEach((pessoa) => {
+    if (pessoa.pets.some((pet) => { return pet.nome === nomePet })) {
+      pessoacomPet = pessoa
     }
-  }
+  })
+  return pessoacomPet
 }
 
 function possuiNenhumPet(){
