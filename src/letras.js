@@ -12,11 +12,11 @@
  * letras.consoantes('pessoa') // ['p', 's', 's']
  */
 
-const VOGAIS = ['a', 'e', 'i', 'o', 'u']
+const CONSOANTES = ['b', 'd', 'r', 't', 'p', 'f', 'g', 'h', 'j', 'k', 'z', 'c', 'v', 'n', 'm', 'l', 'q', 's']
 
-const vogais = (palavra = '') => [...palavra.toLowerCase()].filter(letra => VOGAIS.includes(letra))
+const vogais = (palavra = '') => [...palavra.toLowerCase()].filter(letra => !CONSOANTES.includes(letra))
 
 
-const consoantes = (palavra = '') => [...palavra.toLowerCase()].filter(letra => !VOGAIS.includes(letra))
+const consoantes = (palavra = '') => [...palavra.toLowerCase()].filter(letra => CONSOANTES.includes(letra))
 
 module.exports = {vogais, consoantes}
