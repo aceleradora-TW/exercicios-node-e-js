@@ -16,6 +16,7 @@ const VOGAIS = ['a', 'e', 'i', 'o', 'u']
 
 const vogais = (palavra = '') => [...palavra.toLowerCase()].filter(letra => VOGAIS.includes(letra))
 
+
 const consoantes = (palavra = '') => [...palavra.toLowerCase()].filter(letra => !VOGAIS.includes(letra))
 
 module.exports = {vogais, consoantes}
