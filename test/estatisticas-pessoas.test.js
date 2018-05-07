@@ -17,7 +17,7 @@ describe('O modulo de estatisticas', () => {
     expect(pessoaDaVieirinha.salario).toEqual(6200)
   })
 
-  it('mostra os nomes de quem tem nenhum pet', () => {
+  it('mostra os nomes de quem nao tem nenhum pet', () => {
     const pessoasSemPets = estatisticas.possuiNenhumPet()
 
     expect(pessoasSemPets).toEqual(['Silva', 'Cruz'])
