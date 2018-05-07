@@ -2,34 +2,21 @@ const pessoas = require ('./pessoas.js')
 
 function maiorSalario() {
   let maior = 0;
-  for (var i = 0; i < pessoas.length; i++) {
-    if (pessoas[i].salario > maior) {
-      maior = pessoas[i].salario
-    }
-  }
+  pessoas.forEach(pessoa => {
+    if (maior < pessoa.salario) maior = pessoa.salario
+  })
   return maior
 }
 
-
-function possuiPetChamado(nomePet){
-  let pessoacomPet
-  pessoas.forEach((pessoa) => {
-    if (pessoa.pets.some((pet) => { return pet.nome === nomePet })) {
-      pessoacomPet = pessoa
-    }
-  })
-  return pessoacomPet
+function possuiPetChamado(nomePet) {
+  function nomeDoPet(pessoa) {
+    if (pessoa.pets.some((pet) => { return pet.nome === nomePet })) return pessoa
+  }
+  return pessoas.find(nomeDoPet)
 }
 
-function possuiNenhumPet(){
-  function semPet(pessoa) {
-    return pessoa.pets.length === 0;
-  }
-
-  function nomePessoa(pessoa) {
-    return pessoa.nome
-  }
-  return pessoas.filter(semPet).map(nomePessoa);
+function possuiNenhumPet() {
+  return pessoas.filter((pessoa => pessoa.pets.length === 0)).map(pessoa => pessoa.nome);
 }
 
 const estatisticas_pessoas = {
