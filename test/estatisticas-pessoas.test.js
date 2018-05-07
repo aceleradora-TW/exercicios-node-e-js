@@ -18,8 +18,8 @@ describe('O modulo de estatisticas', () => {
   })
 
   it('mostra os nomes de quem tem nenhum pet', () => {
-    const pessoasSemPets = estatisticas.possuiNenhumPet()
+    const pessoaSemPets = estatisticas.possuiNenhumPet()
 
-    expect(pessoasSemPets).toEqual(['Silva', 'Cruz'])
+    expect(pessoaSemPets).toEqual(['Silva', 'Cruz'])
   })
 })
