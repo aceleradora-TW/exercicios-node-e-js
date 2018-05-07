@@ -9,4 +9,8 @@ describe('Letras', ()=>{
     const consoantes = letras.consoantes('casinha')
     expect(consoantes).toEqual(['c','s','n','h'])
   })
+  it ("Deve aceitar acentos", ()=>{
+    const acentos =letras.vogais('áéíóú')
+    expect(acentos).toEqual(['á','é','í','ó','ú'])
+  })
 })
