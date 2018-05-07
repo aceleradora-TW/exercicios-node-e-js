@@ -1,29 +1,30 @@
 const pessoas = require('./pessoas.js')
 
-function maiorSalario(){
-  for(let i=0; i<pessoas.length; i++){
-    if(pessoas[i].salario === 6200){
-      return pessoas[i].salario
-    }
-  }
+maiorSalario = () => {
+ let maiorSalario = pessoas[0].salario
+ pessoas.forEach(function(item){
+   if (item.salario > maiorSalario) maiorSalario = item.salario
+   })
+ return maiorSalario
 }
 
-function possuiPetChamado(nomePet){
-  for(let i=0; i<pessoas.length; i++){
-    if(pessoas[i].nome === 'Vieira'){
-      if(pessoas[i].idade === 31){
-        if(pessoas[i].salario === 6200){
-          return pessoas[i]
-        }
-      }
-    }
-  }
+possuiPetChamado = (nomePet) => {
+  let aux
+  pessoas.find(pessoa => {
+    pessoa.pets.forEach(item => {
+      if (item.nome === nomePet) aux = pessoa
+    })
+  })
+  return aux
 }
 
-function possuiNenhumPet(){
-  for(let i=0; i<pessoas.length; i++){
-    
-  }
+possuiNenhumPet = () => {
+  const listaFiltrada = pessoas.filter(item => {
+    if (item.pets.length == 0) return item
+  }).map(item => {
+    return item.nome
+  })
+  return listaFiltrada
 }
 
 module.exports = {maiorSalario, possuiPetChamado, possuiNenhumPet}
