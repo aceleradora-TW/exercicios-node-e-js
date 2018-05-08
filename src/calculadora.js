@@ -6,7 +6,7 @@ function soma(umValor, outroValor) {
 
 function subtrai(umValor, outroValor) {
   let resultado
-  resultado = {umValor - outroValor
+  resultado = umValor - outroValor
   return resultado
 }
 
